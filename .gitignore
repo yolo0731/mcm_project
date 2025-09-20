@@ -1,0 +1,30 @@
+# 忽略系统文件
+.DS_Store
+*.log
+*.tmp
+
+# Python 缓存
+__pycache__/
+*.pyc
+
+# VS Code 配置
+.vscode/
+
+# 数据文件
+data/raw/*
+data/processed/*
+
+# 图表输出
+figs/*
+
+# 比赛题目文件
+questions/*.zip
+
+# LaTeX 临时文件
+paper/*.aux
+paper/*.log
+paper/*.toc
+paper/*.out
+
+# Notebook 检查点
+*.ipynb_checkpoints
