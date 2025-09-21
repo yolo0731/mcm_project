@@ -10,12 +10,8 @@ __pycache__/
 # VS Code 配置
 .vscode/
 
-# 数据文件
-data/raw/*
-data/processed/*
 
-# 图表输出
-figs/*
+
 
 # 比赛题目文件
 questions/*.zip
