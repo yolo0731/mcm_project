@@ -21,9 +21,15 @@ wheels/
 *.egg
 MANIFEST
 
-# PyTorch
-*.pth
-*.pt
+# PyTorch (exclude training outputs)
+# *.pth
+# *.pt
+
+# Allow specific pre-trained model files
+!models/pretrained/dann_model.pth
+!models/pretrained/source_pretrained_model.pth
+!data/processed/问题3/dann_model.pth
+!data/processed/问题3/source_pretrained_model.pth
 
 # Jupyter Notebook
 .ipynb_checkpoints

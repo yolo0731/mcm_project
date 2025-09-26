@@ -38,6 +38,25 @@ def install_requirements():
     print("📦 Installing requirements...")
     os.system("pip install -r requirements.txt")
 
+def check_pretrained_models():
+    """检查预训练模型文件"""
+    print("🤖 Checking pre-trained models...")
+    model_files = [
+        'models/pretrained/source_pretrained_model.pth',
+        'models/pretrained/dann_model.pth'
+    ]
+
+    all_present = True
+    for model_file in model_files:
+        if Path(model_file).exists():
+            size = Path(model_file).stat().st_size / (1024*1024)  # MB
+            print(f"✅ Found {model_file} ({size:.1f}MB)")
+        else:
+            print(f"❌ Missing {model_file}")
+            all_present = False
+
+    return all_present
+
 def run_basic_test():
     """运行基础测试"""
     print("🧪 Running basic tests...")
@@ -49,6 +68,14 @@ def run_basic_test():
         import seaborn as sns
         import sklearn
         print("✅ All core dependencies imported successfully")
+
+        # Check pre-trained models
+        models_ok = check_pretrained_models()
+        if models_ok:
+            print("✅ Pre-trained models ready")
+        else:
+            print("⚠️  Some pre-trained models missing (will use simulation)")
+
         return True
     except ImportError as e:
         print(f"❌ Import error: {e}")
