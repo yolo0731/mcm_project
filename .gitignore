@@ -1,26 +1,85 @@
-# 忽略系统文件
-.DS_Store
-*.log
-*.tmp
-
-# Python 缓存
+# Python
 __pycache__/
-*.pyc
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
 
-# VS Code 配置
+# PyTorch
+*.pth
+*.pt
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IPython
+profile_default/
+ipython_config.py
+
+# Virtual environments
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+.venv
+
+# IDE
 .vscode/
+.idea/
+*.swp
+*.swo
 
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
 
+# Data files (comment out if you want to include data)
+# *.mat
+# *.csv
+# *.xlsx
 
+# Model checkpoints and training outputs
+models/
+checkpoints/
+runs/
+logs/
 
-# 比赛题目文件
-questions/*.zip
+# Temporary files
+*.tmp
+*.temp
+~*
 
-# LaTeX 临时文件
-paper/*.aux
-paper/*.log
-paper/*.toc
-paper/*.out
+# Claude Code specific
+.claude/
 
-# Notebook 检查点
-*.ipynb_checkpoints
+# Large files and outputs
+*.png
+*.pdf
+*.jpg
+*.jpeg
+
+# Specific project ignores
+data/processed/问题*/
+figs/

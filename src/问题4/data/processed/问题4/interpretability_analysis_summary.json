@@ -1,0 +1,190 @@
+{
+  "pre_interpretability": {
+    "physical_validation_scores": {
+      "BPFI": 8.926675796508789,
+      "BPFO": 8.926675796508789,
+      "BSF": 8.926675796508789,
+      "FTF": 8.926675796508789
+    },
+    "frequency_analysis": {
+      "inner_ring_validation": {
+        "energy_concentration": 215.0870901639344,
+        "harmonic_presence": true
+      },
+      "outer_ring_validation": {
+        "energy_concentration": 324.9129098360656,
+        "harmonic_presence": true
+      },
+      "ball_validation": {
+        "energy_concentration": 141.4048628029896,
+        "harmonic_presence": true
+      }
+    }
+  },
+  "transfer_process": {
+    "final_domain_loss": 0.7060741030984851,
+    "alignment_convergence": true,
+    "nash_equilibrium_achieved": true
+  },
+  "post_interpretability": {
+    "confidence_statistics": {
+      "mean_confidence": 0.7925351175223209,
+      "uncertainty_decomposition": "completed"
+    },
+    "physical_validation": {
+      "individual_verifications": [
+        {
+          "frequency_validation": {
+            "expected_frequency": 30,
+            "dominant_frequencies": [
+              46.875
+            ],
+            "consistency_score": 0.0,
+            "is_valid": false,
+            "match_details": "0.00 frequency matching rate"
+          },
+          "envelope_validation": {
+            "envelope_frequencies": [
+              62.5,
+              12281.25
+            ],
+            "modulation_strength": 0.28357240980851517,
+            "consistency_score": 0.7164275901914848,
+            "is_valid": true,
+            "analysis_details": "Modulation strength: 0.284"
+          },
+          "physical_consistency_score": 0.28657103607659395,
+          "overall_validity": false,
+          "confidence_level": "low",
+          "sample_index": 0,
+          "predicted_class": 2,
+          "predicted_fault_type": "N"
+        },
+        {
+          "frequency_validation": {
+            "expected_frequency": 162.4564549180328,
+            "dominant_frequencies": [
+              109.375,
+              46.875
+            ],
+            "consistency_score": 0.0,
+            "is_valid": false,
+            "match_details": "0.00 frequency matching rate"
+          },
+          "envelope_validation": {
+            "envelope_frequencies": [
+              62.5,
+              109.375
+            ],
+            "modulation_strength": 0.141780912488093,
+            "consistency_score": 0.283561824976186,
+            "is_valid": false,
+            "analysis_details": "Modulation strength: 0.142"
+          },
+          "physical_consistency_score": 0.1134247299904744,
+          "overall_validity": false,
+          "confidence_level": "low",
+          "sample_index": 1,
+          "predicted_class": 3,
+          "predicted_fault_type": "OR"
+        },
+        {
+          "frequency_validation": {
+            "expected_frequency": 70.7024314014948,
+            "dominant_frequencies": [
+              125.0,
+              46.875
+            ],
+            "consistency_score": 0.0,
+            "is_valid": false,
+            "match_details": "0.00 frequency matching rate"
+          },
+          "envelope_validation": {
+            "envelope_frequencies": [
+              78.125,
+              187.5
+            ],
+            "modulation_strength": 0.15093445863238877,
+            "consistency_score": 0.30186891726477755,
+            "is_valid": false,
+            "analysis_details": "Modulation strength: 0.151"
+          },
+          "physical_consistency_score": 0.12074756690591103,
+          "overall_validity": false,
+          "confidence_level": "low",
+          "sample_index": 2,
+          "predicted_class": 0,
+          "predicted_fault_type": "B"
+        },
+        {
+          "frequency_validation": {
+            "expected_frequency": 162.4564549180328,
+            "dominant_frequencies": [
+              109.375,
+              46.875
+            ],
+            "consistency_score": 0.0,
+            "is_valid": false,
+            "match_details": "0.00 frequency matching rate"
+          },
+          "envelope_validation": {
+            "envelope_frequencies": [
+              62.5,
+              109.375
+            ],
+            "modulation_strength": 0.141780912488093,
+            "consistency_score": 0.283561824976186,
+            "is_valid": false,
+            "analysis_details": "Modulation strength: 0.142"
+          },
+          "physical_consistency_score": 0.1134247299904744,
+          "overall_validity": false,
+          "confidence_level": "low",
+          "sample_index": 3,
+          "predicted_class": 3,
+          "predicted_fault_type": "OR"
+        },
+        {
+          "frequency_validation": {
+            "expected_frequency": 30,
+            "dominant_frequencies": [
+              46.875
+            ],
+            "consistency_score": 0.0,
+            "is_valid": false,
+            "match_details": "0.00 frequency matching rate"
+          },
+          "envelope_validation": {
+            "envelope_frequencies": [
+              62.5,
+              12281.25
+            ],
+            "modulation_strength": 0.28357240980851517,
+            "consistency_score": 0.7164275901914848,
+            "is_valid": true,
+            "analysis_details": "Modulation strength: 0.284"
+          },
+          "physical_consistency_score": 0.28657103607659395,
+          "overall_validity": false,
+          "confidence_level": "low",
+          "sample_index": 4,
+          "predicted_class": 2,
+          "predicted_fault_type": "N"
+        }
+      ],
+      "overall_statistics": {
+        "avg_physical_consistency": 0.18414781980800954,
+        "std_physical_consistency": 0.08367094286110414,
+        "reliability_rate": 0.0,
+        "high_confidence_rate": 0.0,
+        "frequency_validation_success_rate": 0.0,
+        "envelope_validation_success_rate": 0.4
+      },
+      "verification_summary": {
+        "total_samples": 5,
+        "physical_consistency_rate": 0.18414781980800954,
+        "reliable_predictions": 0
+      }
+    }
+  }
+}

@@ -1,0 +1,82 @@
+# MCM Project Configuration
+# 高速列车轴承智能故障诊断项目配置文件
+
+project:
+  name: "MCM Project - High-Speed Train Bearing Fault Diagnosis"
+  version: "1.0.0"
+  description: "基于CDAN的轴承智能故障诊断系统"
+
+paths:
+  data:
+    raw: "data/raw"
+    processed: "data/processed"
+    source_domain: "data/raw/源域数据集"
+    target_domain: "data/raw/目标域数据集"
+
+  output:
+    figures: "figs"
+    models: "models"
+    logs: "logs"
+
+  source:
+    problem1: "src/问题1"
+    problem2: "src/问题2"
+    problem3: "src/问题3"
+    problem4: "src/问题4"
+
+parameters:
+  # 通用参数
+  random_seed: 42
+  device: "auto"  # auto, cpu, cuda
+
+  # 数据处理参数
+  sampling_rate: 32000
+  signal_length: 2048
+
+  # 模型参数
+  batch_size: 64
+  learning_rate: 0.001
+  epochs: 50
+
+  # 特征提取参数
+  n_features: 52
+  n_classes: 4
+
+fault_types:
+  - name: "Normal"
+    code: "N"
+    description: "正常状态"
+
+  - name: "Ball_Fault"
+    code: "B"
+    description: "滚珠故障"
+
+  - name: "Inner_Ring_Fault"
+    code: "IR"
+    description: "内圈故障"
+
+  - name: "Outer_Ring_Fault"
+    code: "OR"
+    description: "外圈故障"
+
+visualization:
+  dpi: 300
+  figure_format: "png"
+  style: "default"
+  font_size: 12
+  colors:
+    - "#1f77b4"  # blue
+    - "#ff7f0e"  # orange
+    - "#2ca02c"  # green
+    - "#d62728"  # red
+
+dependencies:
+  python: ">=3.8"
+  core:
+    - "torch>=1.9.0"
+    - "numpy>=1.21.0"
+    - "pandas>=1.3.0"
+    - "matplotlib>=3.4.0"
+    - "seaborn>=0.11.0"
+    - "scikit-learn>=1.0.0"
+    - "scipy>=1.7.0"

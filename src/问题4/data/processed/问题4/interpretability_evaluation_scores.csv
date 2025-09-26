@@ -1,0 +1,6 @@
+Metric,Score,Category
+Fidelity,0.0,Quantitative
+Stability,0.8806271553039551,Quantitative
+Comprehensiveness,0.09742964293094732,Quantitative
+Physical Reasonableness,0.0,Qualitative
+Expert Consistency,0.8,Qualitative
